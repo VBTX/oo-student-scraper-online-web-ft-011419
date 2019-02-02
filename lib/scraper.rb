@@ -12,9 +12,9 @@ doc.css.(".student-card").each do |card|
 hash[:name] = card.css(".student-name").text
 hash[:location] = card.css(".student-location").text
 hash[:profile_url] = card.css("a").attribute("href")
-  binding.pry
+
 end
-student_hash
+student_hashes
   end
 
   def self.scrape_profile_page(profile_url)
