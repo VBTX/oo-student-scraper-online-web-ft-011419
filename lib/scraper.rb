@@ -17,6 +17,7 @@ doc.css.(".student-card").each do |card|
 # end
 # student_hashes
   end
+end
 
   def self.scrape_profile_page(profile_url)
 
