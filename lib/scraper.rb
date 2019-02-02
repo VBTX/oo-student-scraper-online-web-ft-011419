@@ -10,12 +10,12 @@ class Scraper
     #
 doc.css.(".student-card").each do |card|
   binding.pry
-hash[:name] = card.css(".student-name").text
-hash[:location] = card.css(".student-location").text
-hash[:profile_url] = card.css("a").attribute("href")
-student_hashes << hash
-end
-student_hashes
+# hash[:name] = card.css(".student-name").text
+# hash[:location] = card.css(".student-location").text
+# hash[:profile_url] = card.css("a").attribute("href")
+# student_hashes << hash
+# end
+# student_hashes
   end
 
   def self.scrape_profile_page(profile_url)
