@@ -9,7 +9,7 @@ class Scraper
 
     doc.css.("div.roster-cards-container").each do |card|
       student_hash[:name] = card.css(".student-name").text
-      student_hash[:location]
+      student_hash[:location] = card.css(".student-location").text
       student_hash[:profile_url]
     binding.pry
   end
