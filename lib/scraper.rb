@@ -12,6 +12,7 @@ student_hash[:name] = card.css(".student-name").text
 student_hash[:location] = card.css(".student-location").text
 student_hash[:profile_url] = card.css("a").attribute("href")
   binding.pry
+end
   end
 
   def self.scrape_profile_page(profile_url)
