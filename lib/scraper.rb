@@ -8,7 +8,9 @@ class Scraper
     student_hash ={}
 
     doc.css.("div.roster-cards-container").each do |card|
-      
+      student_hash[:name]
+      student_hash[:location]
+      student_hash[:profile_url]
     binding.pry
 
   end
