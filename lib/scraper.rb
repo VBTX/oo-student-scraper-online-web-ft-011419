@@ -10,7 +10,7 @@ class Scraper
     html.css(".student-card").collect do |student|
       hash = {
         name: student.css(".student-name").text,
-        location: student.css("student-location").text,
+        location: student.css(".student-location").text,
         profile_url: student.css("a").attribute("href").text
       }
       students_hash << hash
