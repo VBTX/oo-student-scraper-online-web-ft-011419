@@ -9,6 +9,7 @@ class Scraper
     hash = {}
     #
 doc.css.(".student-card").each do |card|
+  binding.pry
 hash[:name] = card.css(".student-name").text
 hash[:location] = card.css(".student-location").text
 hash[:profile_url] = card.css("a").attribute("href")
