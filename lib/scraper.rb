@@ -8,10 +8,11 @@ class Scraper
     student_hash ={}
 
     doc.css.("div.roster-cards-container").each do |card|
+        binding.pry
       student_hash[:name] = card.css(".student-name").text
       student_hash[:location] = card.css(".student-location").text
       student_hash[:profile_url] = card.css("a").attribute("href")
-    binding.pry
+
   end
 
   end
