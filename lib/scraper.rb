@@ -22,7 +22,7 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     students_hash = {}
     doc.css("div.social-icon-container a").each do |student|
-            url = student.attribute("href")
+            url = student.attribute("href").text
             students_hash[:twitter] = url if url.include?("twitter")
             students_hash[:linkedin] = url if url.include?("linkedin")
             students_hash[:github] = url if url.include?("github")
